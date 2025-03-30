@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "oracle.oracle-java",
+        "redhat.vscode-yaml",
+        "ms-vscode.vscode-node-azure-pack"
+    ]
+}

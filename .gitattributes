@@ -1,0 +1,11 @@
+* text eol=lf
+
+*.md      text diff=markdown
+*.sh      text eol=lf
+*.java    text diff=java
+
+.gitattributes text
+.gitignore     text
+
+app/mvnw text eol=lf
+app/*.cmd text eol=crlf
