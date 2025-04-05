@@ -1,6 +1,6 @@
 # Azure Open AI with Spring POC
 
-> .[!NOTE].
+> [!NOTE]
 > If your Azure subscription does not have PostgreSQL provider registered, you will need to execute the following command:
 
 ```bash
