@@ -1,11 +1,16 @@
 # Azure Open AI with Spring POC
 
-> **Note:** If your Azure subscription does not have PostgreSQL provider registered, you will need to execute the following command:
+> .[!NOTE].
+> If your Azure subscription does not have PostgreSQL provider registered, you will need to execute the following command:
 
 ```bash
 az provider register --namespace Microsoft.DbforPostgreSQL
 az provider register --namespace Microsoft.CognitiveServices # Optional for Azure OpenAI
 ```
+
+## Environment Configuration
+
+To set up the environment variables for the project, rename the `.env.local` file to `.env` and populate the required values. The `.env` file is used to configure the application with necessary resource details such as resource group, location, database server name, and others.
 
 ## API Endpoints
 
@@ -25,8 +30,8 @@ curl -G "http://localhost:8080/api/rag" \
 This endpoint queries the RAG system about how the QuestionAnswerAdvisor works in Spring AI, which is a component that helps in processing and answering questions using AI.
 
 ```bash
-    curl -G "http://localhost:8080/api/rag" \
-        --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
+curl -G "http://localhost:8080/api/rag" \
+    --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
 ### Blog Endpoint
