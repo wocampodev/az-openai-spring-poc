@@ -85,32 +85,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.microsoft.azure</groupId>
-                <artifactId>azure-container-apps-maven-plugin</artifactId>
-                <version>0.1.0</version>
-                <configuration>
-                    <subscriptionId>your-subscription-id</subscriptionId>
-                    <resourceGroup>your-resource-group</resourceGroup>
-                    <appEnvironmentName>your-app-environment-name</appEnvironmentName>
-                    <region>your-region</region>
-                    <appName>spring-ai-app</appName>
-                    <containers>
-                        <container>
-                            <type>code</type>
-                            <directory>${project.basedir}</directory>
-                        </container>
-                    </containers>
-                    <ingress>
-                        <external>true</external>
-                        <targetPort>8080</targetPort>
-                    </ingress>
-                    <scale>
-                        <minReplicas>0</minReplicas>
-                        <maxReplicas>10</maxReplicas>
-                    </scale>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>

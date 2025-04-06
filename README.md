@@ -14,9 +14,7 @@ To set up the environment variables for the project, rename the `.env.local` fil
 
 ## API Endpoints
 
-### RAG (Retrieval Augmented Generation) Endpoints
-
-#### Query about pgvector
+### Query about pgvector
 
 This endpoint queries the RAG system about pgvector, which is a PostgreSQL extension for vector similarity search.
 
@@ -25,7 +23,7 @@ curl -G "http://localhost:8080/api/rag" \
     --data-urlencode "query=What is pgvector?"
 ```
 
-#### Query about Spring AI's QuestionAnswerAdvisor
+### Query about Spring AI's QuestionAnswerAdvisor
 
 This endpoint queries the RAG system about how the QuestionAnswerAdvisor works in Spring AI, which is a component that helps in processing and answering questions using AI.
 
@@ -34,9 +32,7 @@ curl -G "http://localhost:8080/api/rag" \
     --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-### Blog Endpoint
-
-#### Query Blog Posts by Topic
+### Query Blog Posts by Topic
 
 This endpoint retrieves blog posts related to a specific topic. In this example, it queries for posts about Java on Azure.
 
