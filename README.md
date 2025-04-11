@@ -34,12 +34,12 @@ The Makefile provides commands to provision infrastructure and start the applica
 
 This endpoint queries the RAG system about pgvector, which is a PostgreSQL extension for vector similarity search.
 
-![pgvector example](examples/rag.png)
-
 ```bash
 curl -G "http://localhost:8080/api/rag" \
     --data-urlencode "query=What is pgvector?"
 ```
+
+![rag-example](./examples/rag.png)
 
 ### Query about Spring AI's QuestionAnswerAdvisor
 
