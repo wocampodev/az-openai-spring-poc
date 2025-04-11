@@ -39,8 +39,6 @@ curl -G "http://localhost:8080/api/rag" \
     --data-urlencode "query=What is pgvector?"
 ```
 
-![rag-example](./examples/rag.png)
-
 ### Query about Spring AI's QuestionAnswerAdvisor
 
 This endpoint queries the RAG system about how the QuestionAnswerAdvisor works in Spring AI, which is a component that helps in processing and answering questions using AI.
