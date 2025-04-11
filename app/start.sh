@@ -1,9 +1,6 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
-set -e
-
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-source "${SCRIPT_DIR}/../.env"
+set -eu
 
 export PGHOST=$(az postgres flexible-server show \
     --resource-group $RESOURCE_GROUP \
@@ -26,4 +23,4 @@ export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
     --output tsv \
     | tr -d '\r')
 
-mvn spring-boot:run
+./mvnw spring-boot:run

@@ -32,7 +32,6 @@ app/!**/src/test/**/build/
 ### VS Code ###
 app/.vscode/
 
-
 *.env
 infra/*.log
 infra/**/*.log

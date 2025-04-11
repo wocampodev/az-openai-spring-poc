@@ -10,9 +10,9 @@
     </parent>
     <groupId>dev.wocampo</groupId>
     <artifactId>spring-ai-app</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>spring-ai-app</name>
-    <description>Spring AI Azure Integration</description>
+    <description>Spring AI with Azure Open AI</description>
     <url/>
     <licenses>
         <license/>

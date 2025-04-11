@@ -1,12 +1,7 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
-set -e
+set -eu
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-source "${SCRIPT_DIR}/../.env"
+az group create --name $RESOURCE_GROUP --location $LOCATION >> /dev/null
 
-echo "Creating resource group..." > ${SCRIPT_DIR}/resource-group.log
-
-az group create --name $RESOURCE_GROUP --location $LOCATION
-
-echo "Resource group created" >> ${SCRIPT_DIR}/resource-group.log
+echo "Resource group $RESOURCE_GROUP created successfully."
